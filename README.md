@@ -171,6 +171,20 @@ yaha@yahawork:~/obraz2/terr$
 Используйте ansible код в директории ([src/ansible](https://github.com/netology-group/virt-homeworks/tree/virt-11/05-virt-04-docker-compose/src/ansible))
 
 Для получения зачета вам необходимо предоставить вывод команды "docker ps" , все контейнеры, описанные в ([docker-compose](https://github.com/netology-group/virt-homeworks/blob/virt-11/05-virt-04-docker-compose/src/ansible/stack/docker-compose.yaml)),  должны быть в статусе "Up".
+```
+[root@node01 centos]# docker ps
+CONTAINER ID   IMAGE                              COMMAND                  CREATED              STATUS                    PORTS                                                                              NAMES
+eca0e16db40e   prom/node-exporter:v0.18.1         "/bin/node_exporter …"   About a minute ago   Up 47 seconds             9100/tcp                                                                           nodeexporter
+6cf1412f862d   stefanprodan/caddy                 "/sbin/tini -- caddy…"   About a minute ago   Up 46 seconds             0.0.0.0:3000->3000/tcp, 0.0.0.0:9090-9091->9090-9091/tcp, 0.0.0.0:9093->9093/tcp   caddy
+52de4804224d   prom/prometheus:v2.17.1            "/bin/prometheus --c…"   About a minute ago   Up 47 seconds             9090/tcp                                                                           prometheus
+cfa018db5e6e   gcr.io/cadvisor/cadvisor:v0.47.0   "/usr/bin/cadvisor -…"   About a minute ago   Up 47 seconds (healthy)   8080/tcp                                                                           cadvisor
+09ea2a607500   prom/pushgateway:v1.2.0            "/bin/pushgateway"       About a minute ago   Up 47 seconds             9091/tcp                                                                           pushgateway
+6e83af0810d7   grafana/grafana:7.4.2              "/run.sh"                About a minute ago   Up 46 seconds             3000/tcp                                                                           grafana
+228caa28f38e   prom/alertmanager:v0.20.0          "/bin/alertmanager -…"   About a minute ago   Up 47 seconds             9093/tcp                                                                           alertmanager
+[root@node01 centos]# 
+
+```
+
 
 ## Задача 4
 Откройте web браузер, зайдите на страницу http://<внешний_ip_адрес_вашей_ВМ>:3000.
