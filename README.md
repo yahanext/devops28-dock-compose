@@ -159,7 +159,9 @@ internal_ip_address_node01_yandex_cloud = "192.168.101.18"
 yaha@yahawork:~/obraz2/terr$ 
 
 ```
-
+<p align="center">
+  <img width="1200" height="600" src="./scr2.png">
+</p>
 
 Для получения зачета, вам необходимо предоставить вывод команды terraform apply и страницы свойств созданной ВМ из личного кабинета YandexCloud.
 
