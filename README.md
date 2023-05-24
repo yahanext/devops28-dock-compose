@@ -27,6 +27,9 @@
 Создать собственный образ  любой операционной системы (например, ubuntu-20.04) с помощью Packer ([инструкция](https://cloud.yandex.ru/docs/tutorials/infrastructure-management/packer-quickstart))
 
 Для получения зачета вам необходимо предоставить скриншот страницы с созданным образом из личного кабинета YandexCloud.
+<p align="center">
+  <img width="1200" height="600" src="./scr1.png">
+</p>
 
 ## Задача 2
 
